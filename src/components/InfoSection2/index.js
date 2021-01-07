@@ -1,45 +1,46 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
-import obrazek1 from '../../images/svg-2.svg'
-import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements'
+import obrazek1 from '../../images/html5.png'
+import obrazek2 from '../../images/css3.png'
+import obrazek3 from '../../images/svg-2.svg'
+import obrazek4 from '../../images/svg-2.svg'
+import obrazek5 from '../../images/svg-2.svg'
+import obrazek6 from '../../images/svg-2.svg'
+import obrazek7 from '../../images/svg-2.svg'
+import {Img, Features, FeaturesContent, Box, SkillsWrapper, Skills} from './InfoElements'
 
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
+
+const InfoSection2 = ({lightBg, id, imgStart, topLine, lightText, heading, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
-                <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
-                        <Column1>
-                            <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
-                                <Heading lightText={lightText}>{heading}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
-                                    <Button to="home"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ?  1 : 0}
+            <Features lightBg={lightBg} id={id}>
+                <SkillsWrapper>
+             
+                    <h1>My Skills Bitch</h1>
 
-                                    >{buttonLabel}</Button>
-                                </BtnWrap>
-                            </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={obrazek1} alt={alt}/>
-                            </ImgWrap>
-                        </Column2>
-                    </InfoRow>
-                </InfoWrapper>
-            </InfoContainer>
+                    <FeaturesContent>
+                        <Box>
+                            <Img src={obrazek1} alt={alt}/>
+                            <Skills>HTML5</Skills>
+                        </Box>
+                        <Box>
+                            <Img src={obrazek2} alt={alt}/>
+                            <Skills>CSS3</Skills>
+                        </Box>
+                        <Box>
+                            <Img src={obrazek1} alt={alt}/>
+                            <Skills>HTML5</Skills>
+                        </Box>
+                        <Box>
+                            <Img src={obrazek1} alt={alt}/>
+                            <Skills>HTML5</Skills>
+                            
+                        </Box>
+                    </FeaturesContent>
+                </SkillsWrapper>
+            </Features>
         </>
     )
 }
 
-export default InfoSection
+export default InfoSection2

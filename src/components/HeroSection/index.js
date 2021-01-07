@@ -17,10 +17,9 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Virtual Banking Made Eesy</HeroH1>
+                <HeroH1>Witaj! </HeroH1>
                 <HeroP>
-                    Sign up for a new account today and receive $250 in 
-                    credit towards your next payment.
+                Mam na imie Kamil i jestem Junior Front-end developerem
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup"
@@ -29,7 +28,7 @@ const HeroSection = () => {
                     primary='true'
                     dark='true'
                     >
-                        Get started {hover ? <ArrowForward /> : <ArrowRight/>}
+                        Napisz do mnie {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

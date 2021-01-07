@@ -1,5 +1,47 @@
 import styled from 'styled-components';
 
+
+
+export const Features = styled.div`
+    background: #000;
+    color: white;
+`
+
+export const FeaturesContent = styled.div`
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    margin-top: 30px;
+`
+
+export const SkillsWrapper = styled.div`
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+`
+
+export const Box = styled.div`
+    text-align: center;
+`
+
+export const Skills = styled.div`
+    position: relative;
+    right: 0px;
+`
+
+export const Img = styled.img`
+    /* width: 100%; */
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    max-height: 240px;
+    
+`
+
+
+
+
+
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : "#010606")}
@@ -94,9 +136,3 @@ export const ImgWrap = styled.div`
     height: 100%;
 `
 
-export const Img = styled.img`
-    width: 100%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
-    
-`

@@ -44,20 +44,20 @@ export const ServicesCard = styled.div`
     align-items: center;
     border-radius: 10px;
     max-height: 340px;
-    padding: 30px;
+    padding: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
 
     &:hover{
-        transform: scale(1.02);
+        transform: scale(1.04);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
 `
 
 export const ServicesIcon = styled.img`
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 350px;
     margin-bottom: 10px;
 `
 
@@ -81,4 +81,19 @@ export const ServicesP = styled.p`
     text-align: center;
 
 `
+
+export const LinksContainer = styled.div`
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+`
+export const ProjectLink = styled.div`
+    text-decoration: none;
+    
+`
+
+
+
+
 
